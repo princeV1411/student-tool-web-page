@@ -111,6 +111,7 @@ nav .login .profile{
     justify-content: space-between;
     align-items: center;
     /* position:relative */
+    flex-wrap: wrap;
 }
 .box .bb{
     width: 220px;
@@ -288,4 +289,134 @@ form .btn2{
     padding: 14px 60px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    nav{
+        width: 100%;
+        height: 60px;
+        padding: 2px 10px;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    nav .logo{
+        font-size: 26px;
+    }
+    nav .login{
+        justify-content:space-around;
+    }
+
+    #main{
+        height: 100vh;
+        padding: 40px 10px;
+    }
+    .context-1,.context-2{
+        flex-basis: 100%;
+    }
+    .context-1 .sub-head h1{
+        font-size: 36px;
+    }
+    .sub-head{
+        height: 480px;
+    }
+    .context-1 .sub-head h2{
+        font-size: 20px;
+    }
+    .context-1 .sub-head p{
+        font-size: 16px;
+
+    }
+
+    .box{
+        height: 280px;
+        justify-content: space-evenly;
+    }
+    .box .bb{
+        width: 120px;
+        height: 120px;
+    }
+    .box .bb .part-1{
+        font-size: 10px;
+        text-transform: capitalize;
+    }   
+    .box .bb .part-2{
+       font-size: 10px ;
+       padding: 8px 6px;
+       text-align: center;
+    }
+    .box .bb .cir-img{
+        top: -70%;
+        left: 40%;
+        width: 20px;
+        height: 20px;
+    }
+    .mid-text{
+        margin-top: 90%;
+        font-size: 12px;
+
+    }
+    #links{
+        display: flex;
+        height: 100vh;
+        padding: 0;
+        font-size: 12px;
+    }
+    .ss{
+        width: 40%;
+        height: 20%;
+        text-align: center;
+        font-size: 20px;
+        /* padding: 0; */
+        /* margin: 0; */
+        gap: 0;
+    }
+    .item{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 40%;
+        justify-content: space-evenly;
+        padding: 10% 0%;
+        align-items: flex-start;
+    }
+    .sub-title{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .syll{
+        width: 100%;   
+        height: 100%;
+        display: block;
+    }
+    .syll h3{
+        width: fit-content;
+        font-size: 36px;
+        /* text-align: center; */
+    }
+
+
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    .btn{
+        margin: 30px 0 10px 0;
+    }
+    .btn2{
+        /* margin-top: 0; */
+        /* margin-bottom: 20px; */
+        /* align-items: center; */
+    }
+    form{
+        height: 400px;
+    }
+    .copyright{
+        width: 100%;
+        height: 80px;
+        font-size: 18px;
+        padding: 16px 50px;
+    }
 }
