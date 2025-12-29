@@ -1,6 +1,6 @@
 let login =document.querySelector("#sig")
     login.addEventListener("click",function(){
-        window.location.href = "other page/login page/index.html";
+        window.location.href = "other-page/login-page/login.html";
 });
 
 
